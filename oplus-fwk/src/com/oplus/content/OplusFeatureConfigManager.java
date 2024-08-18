@@ -5,7 +5,6 @@
 
 package com.oplus.content;
 
-import android.os.RemoteException;
 import android.text.TextUtils;
 
 import java.util.List;
@@ -18,10 +17,6 @@ public class OplusFeatureConfigManager {
             sInstance = new OplusFeatureConfigManager();
         }
         return sInstance;
-    }
-
-    public boolean hasFeature(String featureName) {
-        return false;
     }
 
     public interface OnFeatureObserver {
